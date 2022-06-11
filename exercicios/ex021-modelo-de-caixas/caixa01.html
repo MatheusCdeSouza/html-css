@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+
+            height: 300px;
+            width: 300px;
+            /* anatomia da minha caixa; box-size, que é o tamanho; */
+
+            border: 10px solid darkslategray;
+            /* shorthand para border */
+
+            padding: 10px 20px;
+            /* shorthand para padding; lembrando que a ordem é cima > direita > baixo > esquerda; se eu colocar apenas um valor, significa que é o valor para os quatro lados da caixa; se colocar duas medidas significa que o de cima e o de baixo tem o primeiro valor, e os lados tem o segundo valor; */
+
+            margin: 20px 20px 40px 40px;
+            /* mesmo conceito de ordem que aplica no padding: cima - direita - baixo - esquerda; para centralizar a margem da esquerda e direita, basta colocar o "auto" em cada uma; */
+
+            outline: 5px dashed brown;
+            /* shorthand do outline; */
+
+            /* o padding começa de cima e gira na forma de um ponteiro: cima > direita > baixo > esquerda */
+
+            /* para colocar uma caixa no meio, centralizada, eu coloco o elemento margi: auto; */
+
+            /* outline é o tracejado que tem dentro da margem; */
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            border: 10px solid red;
+            /* shorthand do border; seguindo a sequência de width - style - color; */
+            
+            padding: 10px;
+            /* shorthand do padding; o valor para os quatro espaçamentos; */
+        }
+
+        /* user agent = meu navegador, que automaticamente configura o CSS de um documento HTML. */
+
+        /* se o elemento é inline-level ou box-level eu consigo mudar a anotomia dela coloca "display: ..." para mudar o estilo da minha caixa. */
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            SELETORRES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = clildren
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        a:visited {
+            color: darkred;
+        }
+        /* quando o link for visitado vai mostrar essa configuração na tela */
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        /* aqui serve para dar o efeito de mudar de forma quando apenas passar o mouse em cima do link */
+
+        a:active {
+            color: yellow;
+        }
+        /* mostra que o link está ativo; antes de ser clicado */
+
+        a::before {
+            content: '⇒';
+            color: darkgray;
+        }
+        /* os dois pontos significam que essa configuração deve aparecer antes de todos os links */
+
+        a::after {
+            content: '⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        /* aqui é a mesma lógica da de cima, só que é para aparecer depois de todos os links */
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <u>
+        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">Youtube - Curso em Vídeo</a></li>
+        <li><a href="https://ge.globo.com/futebol/futebol-internacional/" target="_blank">Globo Esporte</a></li>
+    </u>
+</body>
+</html>
